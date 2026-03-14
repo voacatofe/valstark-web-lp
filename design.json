@@ -1,0 +1,253 @@
+{
+    "design_system": {
+        "brand": {
+            "name": "Valstark Style Profile",
+            "personality": [
+                "modern",
+                "technology-driven",
+                "clean",
+                "conversion-focused",
+                "corporate",
+                "efficient"
+            ],
+            "tone": [
+                "professional",
+                "trustworthy",
+                "innovation-oriented",
+                "performance-focused"
+            ]
+        },
+        "colors": {
+            "primary": "#F25C2A",
+            "primary_gradient": {
+                "start": "#F25C2A",
+                "end": "#FF7A3D"
+            },
+            "secondary": "#1E1E1E",
+            "background": "#F6F6F6",
+            "section_light": "#FFFFFF",
+            "section_dark": "#0E0E0E",
+            "text_primary": "#222222",
+            "text_secondary": "#6B6B6B",
+            "border": "#E8E8E8",
+            "card_background": "#FFFFFF"
+        },
+        "typography": {
+            "font_family": "Inter, system-ui, sans-serif",
+            "heading": {
+                "weight": 700,
+                "line_height": 1.2
+            },
+            "subheading": {
+                "weight": 600,
+                "line_height": 1.3
+            },
+            "body": {
+                "weight": 400,
+                "line_height": 1.6
+            },
+            "sizes": {
+                "hero_title": "48px",
+                "section_title": "32px",
+                "card_title": "20px",
+                "body": "16px",
+                "small": "14px"
+            }
+        },
+        "spacing_system": {
+            "section_padding": "96px",
+            "container_width": "1200px",
+            "grid_gap": "32px",
+            "card_padding": "24px",
+            "button_padding": "14px 24px",
+            "border_radius": {
+                "card": "16px",
+                "button": "30px",
+                "input": "10px"
+            }
+        },
+        "shadows": {
+            "card": "0 8px 24px rgba(0,0,0,0.06)",
+            "hover": "0 12px 32px rgba(0,0,0,0.10)"
+        },
+        "layout": {
+            "structure": "vertical landing page",
+            "grid": {
+                "columns": 12,
+                "container": "centered"
+            },
+            "responsive": {
+                "tablet_breakpoint": "1024px",
+                "mobile_breakpoint": "768px"
+            }
+        },
+        "components": {
+            "navbar": {
+                "height": "80px",
+                "background": "transparent",
+                "alignment": "logo_left",
+                "elements": [
+                    "logo",
+                    "navigation_links",
+                    "cta_button"
+                ]
+            },
+            "hero_section": {
+                "layout": "two-column",
+                "left": {
+                    "elements": [
+                        "tagline_badge",
+                        "large_heading",
+                        "supporting_text",
+                        "primary_cta"
+                    ]
+                },
+                "right": {
+                    "elements": [
+                        "product_visual",
+                        "human_photo"
+                    ],
+                    "composition": "layered images"
+                },
+                "background": "light"
+            },
+            "logo_strip": {
+                "layout": "horizontal logos",
+                "style": "grayscale logos",
+                "spacing": "evenly distributed"
+            },
+            "problem_solution_section": {
+                "layout": "two-column",
+                "left": "image grid",
+                "right": {
+                    "elements": [
+                        "bullet_list",
+                        "icons",
+                        "secondary_cta"
+                    ]
+                }
+            },
+            "stats_cards": {
+                "layout": "4-column grid",
+                "card": {
+                    "icon_top",
+                    "percentage_value",
+                    "description"
+                }
+            },
+            "product_showcase": {
+                "layout": "centered image",
+                "style": "soft card container",
+                "background": "#FFFFFF",
+                "border_radius": "20px"
+            },
+            "comparison_section": {
+                "background": "primary_gradient",
+                "layout": "two-column",
+                "left": [
+                    "title",
+                    "description",
+                    "cta"
+                ],
+                "right": "comparison_table"
+            },
+            "testimonials": {
+                "layout": "two cards",
+                "style": {
+                    "card_background": "#FFFFFF",
+                    "rounded": true,
+                    "quote_icon": true,
+                    "stars_rating": true
+                }
+            },
+            "faq": {
+                "layout": "two-column",
+                "left": "image",
+                "right": "accordion",
+                "accordion_style": {
+                    "rounded": true,
+                    "border": true,
+                    "expand_icon": "plus"
+                }
+            },
+            "form_section": {
+                "layout": "centered form card",
+                "fields": [
+                    "name",
+                    "email",
+                    "phone",
+                    "company",
+                    "dropdown",
+                    "textarea"
+                ],
+                "button": "primary"
+            },
+            "cta_banner": {
+                "style": {
+                    "background": "primary",
+                    "text_color": "#FFFFFF",
+                    "rounded": "20px"
+                },
+                "layout": "centered text"
+            },
+            "footer": {
+                "background": "#0E0E0E",
+                "text_color": "#BBBBBB",
+                "layout": "centered column",
+                "elements": [
+                    "logo",
+                    "description",
+                    "social_icons",
+                    "copyright"
+                ]
+            }
+        },
+        "ui_patterns": {
+            "buttons": {
+                "primary": {
+                    "background": "primary",
+                    "text": "#FFFFFF",
+                    "radius": "30px",
+                    "hover": "darken_primary"
+                },
+                "secondary": {
+                    "background": "#FFFFFF",
+                    "border": "1px solid #E5E5E5"
+                }
+            },
+            "cards": {
+                "background": "#FFFFFF",
+                "radius": "16px",
+                "shadow": "card",
+                "padding": "24px"
+            },
+            "inputs": {
+                "background": "#F9F9F9",
+                "border": "1px solid #E8E8E8",
+                "radius": "10px",
+                "padding": "14px"
+            }
+        },
+        "visual_style": {
+            "imagery": [
+                "real people photos",
+                "product renders",
+                "retail environment"
+            ],
+            "icon_style": "minimal outline icons",
+            "illustration_style": "subtle background shapes",
+            "photo_treatment": "clean lighting with neutral background"
+        },
+        "animation_guidelines": {
+            "hover_effects": [
+                "card lift",
+                "button brightness increase"
+            ],
+            "scroll_effects": [
+                "fade-up",
+                "slight translateY"
+            ],
+            "transition_speed": "200ms"
+        }
+    }
+}
