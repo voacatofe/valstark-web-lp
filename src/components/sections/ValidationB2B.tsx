@@ -2,101 +2,118 @@
 
 import { motion } from "framer-motion";
 import { Settings, Code, Globe } from "lucide-react";
-import Image from "next/image";
 
 export default function ValidationB2B() {
     const pillars = [
         {
-            icon: <Settings className="w-10 h-10 text-[#ff5632]" />,
-            title: "PRECIÇÃO CNC EM MÍCRON"
+            id: "01",
+            icon: <Settings className="w-8 h-8 text-[#ff5632]" strokeWidth={1.5} />,
+            title: "PRECISÃO CNC EM MÍCRON",
+            desc: "Tolerância zero. Encaixes milimétricos que garantem inviolabilidade mecânica absoluta e robustez extrema contra ataques físicos."
         },
         {
-            icon: <Code className="w-10 h-10 text-[#ff5632]" />,
-            title: "SOFTWARE PROPRIETÁRIO (VSK OS)"
+            id: "02",
+            icon: <Code className="w-8 h-8 text-[#ff5632]" strokeWidth={1.5} />,
+            title: "SOFTWARE PROPRIETÁRIO (VSK OS)",
+            desc: "Cérebro nativo. Arquitetura de sistema fechada e imune a vulnerabilidades genéricas, garantindo auditoria e controle cibernético."
         },
         {
-            icon: <Globe className="w-10 h-10 text-[#ff5632]" />,
-            title: "SUPORTE MULTI-MOEDA (+140 MOEDAS)"
+            id: "03",
+            icon: <Globe className="w-8 h-8 text-[#ff5632]" strokeWidth={1.5} />,
+            title: "SUPORTE MULTI-MOEDA (+140)",
+            desc: "Validação em escala global. Sensores de nível bancário processam o numerário mundial em tempo real para o varejo internacional."
         }
     ];
 
-    const partners = ["PROSEGUR", "ZARA", "HEXAGON", "INTELBRAS"];
-    const certs = ["CE", "UL", "FCC"];
+
 
     return (
-        <section className="py-24 bg-white relative border-b border-gray-100" id="validacao">
-            <div className="container mx-auto px-4 md:px-6">
-                <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-16 mb-20">
+        <section className="py-24 lg:py-32 bg-[#0B0C10] relative overflow-hidden" id="validacao">
+            {/* Engineering Grid Background */}
+            <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
+
+            {/* Glowing Top Accent */}
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-[1px] bg-gradient-to-r from-transparent via-[#ff5632] to-transparent opacity-40"></div>
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-[500px] bg-[#ff5632] opacity-[0.04] blur-[120px] pointer-events-none"></div>
+
+            <div className="container-design relative z-10">
+                <div className="flex flex-col lg:flex-row items-start justify-between gap-16 lg:gap-24 mb-24">
+                    {/* Left Content - Typography & Story */}
                     <motion.div
-                        className="lg:w-1/2"
-                        initial={{ opacity: 0, x: -20 }}
+                        className="lg:w-5/12 relative"
+                        initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.6 }}
+                        viewport={{ once: true, margin: "-100px" }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
                     >
-                        <h2 className="font-display text-4xl md:text-5xl font-black text-[#424242] tracking-tighter mb-6">
-                            ENGENHARIA SEM <span className="text-[#ff5632]">FRONTEIRAS.</span>
+                        {/* Technical Label */}
+                        <div className="flex items-center gap-3 mb-8">
+                            <span className="w-8 h-[1px] bg-[#ff5632]"></span>
+                            <span className="font-mono text-xs text-[#ff5632] tracking-[0.3em] uppercase">DNA Valstark</span>
+                        </div>
+
+                        <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tighter mb-8 uppercase leading-[1.1]">
+                            ENGENHARIA SEM <br />
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff5632] to-[#ff8f73] inline-block mt-2">
+                                FRONTEIRAS.
+                            </span>
                         </h2>
-                        <p className="text-gray-600 text-lg leading-relaxed font-body">
-                            Não somos apenas fabricantes de cofres inteligentes. Somos engenheiros especializados em escuta ativa e na verticalização industrial. Nossa precisão micrométrica, herdada da indústria de mineração, é aplicada na segurança do numerário global.
-                        </p>
+
+                        <div className="space-y-6 text-gray-400 text-lg leading-relaxed font-body font-light">
+                            <p>
+                                Não somos apenas fabricantes de cofres inteligentes. Somos engenheiros especializados em <strong className="text-gray-200 font-medium">escuta ativa</strong> e na <strong className="text-gray-200 font-medium">verticalização industrial</strong>.
+                            </p>
+                            <p>
+                                Nossa precisão micrométrica, herdada das exigências extremas da indústria de mineração, é aplicada na arquitetura de segurança do numerário global. Hardware e software construídos do zero para tolerância zero a falhas.
+                            </p>
+                        </div>
                     </motion.div>
 
-                    <div className="lg:w-1/2 w-full grid grid-cols-1 md:grid-cols-3 gap-8">
+                    {/* Right Content - Technical Pillars */}
+                    <div className="lg:w-7/12 w-full flex flex-col gap-4 mt-8 lg:mt-0">
                         {pillars.map((pillar, index) => (
                             <motion.div
-                                key={index}
-                                className="flex flex-col items-start gap-4 p-6 bg-[#F6F6F6] rounded-xl border border-gray-100 shadow-sm"
+                                key={pillar.id}
+                                className="group relative p-6 sm:p-8 bg-[#111111] border border-white/5 hover:border-[#ff5632]/40 transition-colors duration-500 overflow-hidden flex flex-col sm:flex-row gap-6 sm:items-center"
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ duration: 0.5, delay: index * 0.1 }}
+                                viewport={{ once: true, margin: "-50px" }}
+                                transition={{ duration: 0.5, delay: index * 0.15, ease: "easeOut" }}
                             >
-                                <div className="p-3 bg-white rounded-lg shadow-sm">
-                                    {pillar.icon}
+                                {/* Hover Gradient Fill */}
+                                <div className="absolute inset-0 bg-gradient-to-r from-[#ff5632]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+                                {/* Precision Corner Markers */}
+                                <div className="absolute top-0 left-0 w-2 h-2 border-t border-l border-white/20 group-hover:border-[#ff5632] transition-colors"></div>
+                                <div className="absolute top-0 right-0 w-2 h-2 border-t border-r border-white/20 group-hover:border-[#ff5632] transition-colors"></div>
+                                <div className="absolute bottom-0 left-0 w-2 h-2 border-b border-l border-white/20 group-hover:border-[#ff5632] transition-colors"></div>
+                                <div className="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-white/20 group-hover:border-[#ff5632] transition-colors"></div>
+
+                                <div className="relative z-10 flex-shrink-0">
+                                    <div className="w-16 h-16 flex items-center justify-center bg-black/60 border border-white/10 !text-white rounded shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] group-hover:shadow-[inset_0_1px_0_rgba(242,92,42,0.2)] transition-shadow">
+                                        {pillar.icon}
+                                    </div>
                                 </div>
-                                <h3 className="font-display font-bold text-sm tracking-widest text-[#424242] uppercase">
-                                    {pillar.title}
-                                </h3>
+
+                                <div className="relative z-10 flex-1">
+                                    <div className="flex justify-between items-center mb-2">
+                                        <h3 className="font-display font-bold text-sm sm:text-base tracking-widest !text-white uppercase pr-4">
+                                            {pillar.title}
+                                        </h3>
+                                        <span className="font-mono text-[10px] !text-gray-400 tracking-widest hidden sm:block">
+                                            VOL.{pillar.id}
+                                        </span>
+                                    </div>
+                                    <p className="font-mono text-xs sm:text-sm !text-gray-400 leading-relaxed">
+                                        {pillar.desc}
+                                    </p>
+                                </div>
                             </motion.div>
                         ))}
                     </div>
                 </div>
 
-                {/* Authority Badges Area */}
-                <motion.div
-                    className="pt-16 border-t border-gray-200"
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.6 }}
-                >
-                    <div className="flex flex-col items-center justify-center gap-12">
-                        <h4 className="text-sm font-bold text-gray-400 uppercase tracking-[0.2em] mb-4 text-center">
-                            Conformidade & Confiança Global
-                        </h4>
 
-                        <div className="flex flex-wrap items-center justify-center gap-12 md:gap-24 opacity-60 grayscale hover:grayscale-0 transition-all duration-300">
-                            {/* Certifications Mock */}
-                            <div className="flex gap-8 items-center border-r border-gray-300 pr-8 md:pr-24">
-                                {certs.map((cert) => (
-                                    <div key={cert} className="font-display font-black text-3xl text-[#424242] tracking-tighter">
-                                        {cert}
-                                    </div>
-                                ))}
-                            </div>
-
-                            {/* Partners Mock */}
-                            <div className="flex flex-wrap justify-center gap-8 md:gap-16 items-center">
-                                {partners.map((partner) => (
-                                    <div key={partner} className="font-display font-bold text-2xl text-gray-800 tracking-tight">
-                                        {partner}
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
-                </motion.div>
             </div>
         </section>
     );

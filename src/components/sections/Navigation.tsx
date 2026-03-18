@@ -53,7 +53,7 @@ export default function Navigation() {
             transition={{ duration: 0.5, ease: "easeOut" }}
         >
             <div className="container-design">
-                <div className="flex items-center justify-between h-20">
+                <div className="flex items-center justify-between h-[10vh]">
                     {/* Logo */}
                     <motion.a
                         href="#"
@@ -61,9 +61,9 @@ export default function Navigation() {
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
                     >
-                        <div className="relative w-32 h-10 flex items-center">
+                        <div className="relative w-48 h-12 flex items-center">
                             <Image
-                                src="/logo preto.png"
+                                src="/Logo_branco.png"
                                 alt="Valstark Logo"
                                 fill
                                 className="object-contain"
@@ -84,7 +84,7 @@ export default function Navigation() {
                                 }}
                                 className="
                   relative text-sm font-semibold uppercase tracking-wider
-                  text-slate-600
+                  text-slate-200
                   hover:text-primary
                   transition-colors duration-200
                   group
@@ -147,8 +147,8 @@ export default function Navigation() {
                                     }}
                                     className="
                     py-3 px-4 text-base font-semibold uppercase tracking-wider
-                    text-slate-600
-                    hover:text-primary hover:bg-slate-50
+                    text-slate-200
+                    hover:text-primary hover:bg-white/5
                     rounded-lg transition-all duration-200
                   "
                                 >

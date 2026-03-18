@@ -24,7 +24,7 @@ export default function OperationalSolutionB2B() {
 
     return (
         <section className="py-24 bg-[#F6F6F6] relative" id="solucao">
-            <div className="container mx-auto px-4 md:px-6">
+            <div className="container-design">
                 <div className="text-center max-w-4xl mx-auto mb-20">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
