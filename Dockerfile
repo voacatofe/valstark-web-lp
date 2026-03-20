@@ -30,14 +30,11 @@ RUN adduser --system --uid 1001 nextjs
 # Copiar arquivos necessários do estágio builder
 # O modo standalone do Next.js copia apenas o que é necessário para rodar o servidor
 COPY --from=builder /app/public ./public
-
-# Configurar permissões para o cache do Next.js
-RUN mkdir .next
-RUN chown nextjs:nodejs .next
-
-# Copiar o build standalone e arquivos estáticos
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
+
+# Caso o standalone não copie a pasta public pra dentro dele, garantimos o link/cópia
+RUN cp -r public .next/standalone/ || true
 
 USER nextjs
 
