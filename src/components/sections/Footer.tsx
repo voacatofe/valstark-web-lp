@@ -14,7 +14,7 @@ export default function Footer() {
                 <div className="flex flex-col items-center gap-4">
                     <div className="relative w-56 h-16 flex items-center justify-center">
                         <Image
-                            src="/Logo Branco.png"
+                            src="/logo_branco.png"
                             alt="Valstark Logo"
                             fill
                             className="object-contain"

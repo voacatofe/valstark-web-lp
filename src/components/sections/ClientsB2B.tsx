@@ -6,11 +6,11 @@ import Image from "next/image";
 
 export default function ClientsB2B() {
     const clients = [
-        { name: "PROSEGUR", filename: "prossegur.png", width: 140 },
-        { name: "ZARA", filename: "zara.png", width: 110 },
+        { name: "PROSEGUR", filename: "Prossegur.png", width: 140 },
+        { name: "ZARA", filename: "Zara.png", width: 110 },
         { name: "AUDACES", filename: "audaces.png", width: 140 },
-        { name: "HEXAGON", filename: "hexagon.png", width: 140 },
-        { name: "INTELBRAS", filename: "intelbras.png", width: 140 },
+        { name: "HEXAGON", filename: "Hexagon.png", width: 140 },
+        { name: "INTELBRAS", filename: "Intelbras.png", width: 140 },
     ];
 
     return (
