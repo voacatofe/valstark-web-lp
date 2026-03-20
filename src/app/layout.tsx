@@ -12,9 +12,6 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Valstark Security | Engineering Excellence",
   description: "High-fidelity security solutions and premium safes designed with technical precision. Engineered for those who demand uncompromising Stark and Strong values.",
-  icons: {
-    icon: "/favicon.png",
-  },
 };
 
 import { ModalProvider } from "@/context/ModalContext";
