@@ -30,6 +30,7 @@ export default function ClientsB2B() {
                             alt={client.name}
                             fill
                             className="object-contain"
+                            sizes="(max-width: 768px) 33vw, 20vw"
                         />
                     </motion.div>
                 ))}

@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 import Button from "../ui/Button";
+import { useModal } from "@/context/ModalContext";
 
 interface PortfolioItem {
     id: string;
@@ -52,6 +53,7 @@ const portfolioItems: PortfolioItem[] = [
 ];
 
 export default function PortfolioB2B() {
+    const { openCatalogModal } = useModal();
     return (
         <section className="py-24 bg-white" id="portfolio">
             <div className="container-design">
@@ -113,6 +115,7 @@ export default function PortfolioB2B() {
                                         variant="outline"
                                         fullWidth
                                         rightIcon={<ArrowRight className="w-4 h-4" />}
+                                        onClick={openCatalogModal}
                                     >
                                         Especificações Técnicas
                                     </Button>

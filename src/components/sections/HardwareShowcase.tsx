@@ -83,13 +83,18 @@ export default function HardwareShowcase() {
                                 <ul className="space-y-4">
                                     <li className="flex items-start gap-4 border-t border-zinc-800/50 pt-4">
                                         <span className="text-zinc-500 font-mono text-xs mt-1">01</span>
-                                        <span className="text-zinc-400 font-light leading-relaxed">Capacidade robusta otimizada, comportando de 1.200 a 3.000 cédulas sem expansão física lateral.</span>
+                                        <span className="text-zinc-400 font-light leading-relaxed">Capacidade de 1.200 a 3.000 cédulas sem expansão física lateral. Validador NV200 Spectral com 4,8M pontos de dados por nota.</span>
                                     </li>
                                     <li className="flex items-start gap-4 border-t border-zinc-800/50 pt-4">
                                         <span className="text-zinc-500 font-mono text-xs mt-1">02</span>
-                                        <span className="text-zinc-400 font-light leading-relaxed">Design blindado ultra compacto projetado perfeitamente para bancadas reduzidas.</span>
+                                        <span className="text-zinc-400 font-light leading-relaxed">Design ultra compacto com <strong className="text-zinc-300">Boca de Lobo Oculta</strong>: fenda dissimulada na estrutura frontal com defletores antidirecionais que eliminam a tentativa de pescaria.</span>
                                     </li>
                                 </ul>
+                            </div>
+                            {/* Stat Bar */}
+                            <div className="mt-10 flex items-center justify-between text-zinc-400 text-sm font-mono uppercase tracking-wider border-t border-zinc-800 pt-6">
+                                <span>1.200-3.000 CÉDULAS</span>
+                                <span>NV200 SPECTRAL</span>
                             </div>
                         </div>
                     </div>
@@ -124,13 +129,18 @@ export default function HardwareShowcase() {
                                 <ul className="space-y-4">
                                     <li className="flex items-start lg:items-center justify-start lg:justify-end gap-4 border-t border-zinc-800/50 pt-4">
                                         <span className="text-zinc-500 font-mono text-xs mt-1 lg:mt-0 lg:order-2">01</span>
-                                        <span className="text-zinc-400 font-light leading-relaxed lg:text-right lg:order-1">Gestão de alto giro (5.000 a 7.500 notas) com mecânica interna baseada na patente Free Fall.</span>
+                                        <span className="text-zinc-400 font-light leading-relaxed lg:text-right lg:order-1">Motor SNBC BNE-D10: processamento de até <strong className="text-zinc-300">25 notas por segundo</strong> com CIS multiespectral duplo e detecção de entintamento de segurança.</span>
                                     </li>
                                     <li className="flex items-start lg:items-center justify-start lg:justify-end gap-4 border-t border-zinc-800/50 pt-4">
                                         <span className="text-zinc-500 font-mono text-xs mt-1 lg:mt-0 lg:order-2">02</span>
-                                        <span className="text-zinc-400 font-light leading-relaxed lg:text-right lg:order-1">Interface tátil cega (Touch 7") isolada de invasões rodando núcleo Linux VSK OS em tempo real.</span>
+                                        <span className="text-zinc-400 font-light leading-relaxed lg:text-right lg:order-1">MTBF de 24.500 horas e vida útil de <strong className="text-zinc-300">25 milhões de cédulas</strong>. Bateria integrada nativa com 2h de autonomia real.</span>
                                     </li>
                                 </ul>
+                            </div>
+                            {/* Stat Bar */}
+                            <div className="mt-10 flex items-center justify-between text-zinc-400 text-sm font-mono uppercase tracking-wider border-t border-zinc-800 pt-6">
+                                <span>25 NOTAS/SEGUNDO</span>
+                                <span>25 MILHÕES DE CÉDULAS</span>
                             </div>
                         </div>
 
@@ -198,18 +208,23 @@ export default function HardwareShowcase() {
                                     <ShieldAlert className="w-4 h-4 text-[#FF5632]" />
                                     <p className="text-[10px] font-mono text-[#FF5632] uppercase tracking-widest font-bold">TOLERÂNCIA ZERO</p>
                                 </div>
-                                <p className="font-display font-bold text-xl text-zinc-100 mb-6 uppercase tracking-tight">Escrow de Retenção Temporária</p>
+                                <p className="font-display font-bold text-xl text-zinc-100 mb-6 uppercase tracking-tight">Módulo Escrow + 12 Notas/Segundo</p>
 
                                 <ul className="space-y-4">
                                     <li className="flex items-start gap-4 border-t border-zinc-800/50 pt-4">
                                         <span className="text-zinc-500 font-mono text-xs mt-1">01</span>
-                                        <span className="text-zinc-400 font-light leading-relaxed">Alimentação brutal de maços de 500 cédulas em frações de segundos sem engasmo mecânico.</span>
+                                        <span className="text-zinc-400 font-light leading-relaxed"><strong className="text-zinc-300">Câmara Escrow:</strong> notas ficam suspensas e auditadas antes da aprovação final. Com divergência, todo o numerário é devolvido. Zero litígio de "dinheiro engolido".</span>
                                     </li>
                                     <li className="flex items-start gap-4 border-t border-zinc-800/50 pt-4">
                                         <span className="text-zinc-500 font-mono text-xs mt-1">02</span>
-                                        <span className="text-zinc-400 font-light leading-relaxed">Hardware de grau militar alocado em tesourarias centrais de hipermercados e grandes distribuidores.</span>
+                                        <span className="text-zinc-400 font-light leading-relaxed">Velocidade de <strong className="text-zinc-300">12 cédulas/segundo</strong> com sensores geométricos identificando notas entintadas, mutiladas, manchadas ou perfuradas em tempo real.</span>
                                     </li>
                                 </ul>
+                            </div>
+                            {/* Stat Bar */}
+                            <div className="mt-10 flex items-center justify-between text-zinc-400 text-sm font-mono uppercase tracking-wider border-t border-zinc-800 pt-6">
+                                <span>MÓDULO ESCROW</span>
+                                <span>12 NOTAS/SEGUNDO</span>
                             </div>
                         </div>
                     </div>

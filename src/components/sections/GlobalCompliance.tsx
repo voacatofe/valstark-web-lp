@@ -39,6 +39,7 @@ export default function GlobalCompliance() {
                                         fill
                                         className="object-contain brightness-0 invert"
                                         aria-label={`Certificação de Segurança ${cert.name}`}
+                                        sizes="60px"
                                     />
                                 </div>
                             ))}

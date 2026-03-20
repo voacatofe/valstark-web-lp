@@ -3,8 +3,10 @@
 import { motion } from "framer-motion";
 import Button from "@/components/ui/Button";
 import { ArrowRight } from "lucide-react";
+import { useModal } from "@/context/ModalContext";
 
 export default function HeroB2B() {
+    const { openCatalogModal } = useModal();
     return (
         <section className="relative h-[90vh] w-full flex flex-col justify-center overflow-hidden bg-[#000000] pt-[10vh] pb-0">
             {/* Engineering Grid Background */}
@@ -90,6 +92,7 @@ export default function HeroB2B() {
                                 size="lg"
                                 className="group relative rounded-none px-10 py-5 bg-[#F25C2A] hover:bg-[#ff6a3d] text-black border-none transition-all duration-300 overflow-hidden"
                                 rightIcon={<ArrowRight className="w-5 h-5 ml-2 transition-transform duration-300 group-hover:translate-x-1" />}
+                                onClick={openCatalogModal}
                             >
                                 <span className="relative z-10 font-bold tracking-widest uppercase text-xs">CONHEÇA O PADRÃO VALSTARK</span>
                                 

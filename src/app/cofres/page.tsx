@@ -10,8 +10,15 @@ import ActiveDefense from "@/components/sections/ActiveDefense";
 import NameOrigin from "@/components/sections/NameOrigin";
 import CatalogCTA from "@/components/sections/CatalogCTA";
 import Footer from "@/components/sections/Footer";
+import type { Metadata } from "next";
 
-export default function Home() {
+export const metadata: Metadata = {
+  title: "Cofres Inteligentes Valstark | Engenharia de Segurança",
+  description:
+    "Cofres inteligentes de grau industrial da Valstark. Tecnologia edge computing embarcada, validação espectral multimoeda e blindagem ativa com guilhotina automática. Projetados para o varejo de alta performance.",
+};
+
+export default function CofresPage() {
   return (
     <div className="relative flex min-h-screen w-full flex-col overflow-x-hidden">
       <Navigation />

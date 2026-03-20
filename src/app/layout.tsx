@@ -14,6 +14,8 @@ export const metadata: Metadata = {
   description: "High-fidelity security solutions and premium safes designed with technical precision. Engineered for those who demand uncompromising Stark and Strong values.",
 };
 
+import { ModalProvider } from "@/context/ModalContext";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -24,7 +26,9 @@ export default function RootLayout({
       <body
         className={`${inter.variable} font-body antialiased`}
       >
-        {children}
+        <ModalProvider>
+          {children}
+        </ModalProvider>
       </body>
     </html>
   );

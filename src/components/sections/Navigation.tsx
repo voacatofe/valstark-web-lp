@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ArrowRight } from "lucide-react";
 import Button from "../ui/Button";
 import Image from "next/image";
+import { useModal } from "@/context/ModalContext";
 
 interface NavLink {
     label: string;
@@ -18,6 +19,7 @@ const navLinks: NavLink[] = [
 ];
 
 export default function Navigation() {
+    const { openCatalogModal } = useModal();
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -68,6 +70,7 @@ export default function Navigation() {
                                 fill
                                 className="object-contain"
                                 priority
+                                sizes="(max-width: 768px) 150px, 200px"
                             />
                         </div>
                     </motion.a>
@@ -82,13 +85,7 @@ export default function Navigation() {
                                     e.preventDefault();
                                     scrollToSection(link.href);
                                 }}
-                                className="
-                  relative text-sm font-semibold uppercase tracking-wider
-                  text-slate-200
-                  hover:text-primary
-                  transition-colors duration-200
-                  group
-                "
+                                className="relative text-sm font-semibold uppercase tracking-wider text-slate-200 hover:text-primary transition-colors duration-200 group"
                                 initial={{ opacity: 0, y: -10 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.1 + index * 0.1 }}
@@ -105,7 +102,7 @@ export default function Navigation() {
                             variant="primary"
                             size="sm"
                             rightIcon={<ArrowRight className="w-4 h-4" />}
-                            onClick={() => scrollToSection("#demo")}
+                            onClick={openCatalogModal}
                         >
                             Falar com Especialista
                         </Button>
@@ -145,12 +142,7 @@ export default function Navigation() {
                                         e.preventDefault();
                                         scrollToSection(link.href);
                                     }}
-                                    className="
-                    py-3 px-4 text-base font-semibold uppercase tracking-wider
-                    text-slate-200
-                    hover:text-primary hover:bg-white/5
-                    rounded-lg transition-all duration-200
-                  "
+                                    className="py-3 px-4 text-base font-semibold uppercase tracking-wider text-slate-200 hover:text-primary hover:bg-white/5 rounded-lg transition-all duration-200"
                                 >
                                     {link.label}
                                 </a>
@@ -159,7 +151,7 @@ export default function Navigation() {
                                 <Button
                                     variant="primary"
                                     fullWidth
-                                    onClick={() => scrollToSection("#demo")}
+                                    onClick={openCatalogModal}
                                 >
                                     Falar com Especialista
                                 </Button>

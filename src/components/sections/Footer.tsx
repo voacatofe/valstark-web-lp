@@ -18,6 +18,7 @@ export default function Footer() {
                             alt="Valstark Logo"
                             fill
                             className="object-contain"
+                            sizes="(max-width: 768px) 224px, 224px"
                         />
                     </div>
                 </div>

@@ -1,0 +1,19 @@
+node_modules
+.next
+.git
+.gitignore
+.dockerignore
+LICENSE
+README.md
+Dockerfile
+.env*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.vscode
+.gemini
+docs
+Frame.png
+sessao_padroes_internacionais (1).md
+design.md
+design.json
