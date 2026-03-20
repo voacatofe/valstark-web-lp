@@ -26,7 +26,7 @@ export default function ClientsB2B() {
                         style={{ width: client.width * 1.6, height: 150 }}
                     >
                         <Image
-                            src={`/partners/${client.filename}`}
+                            src={`/cofres/partners/${client.filename}`}
                             alt={client.name}
                             fill
                             className="object-contain"

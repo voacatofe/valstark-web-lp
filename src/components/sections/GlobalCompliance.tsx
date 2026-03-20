@@ -34,7 +34,7 @@ export default function GlobalCompliance() {
                                     style={{ width: cert.width, height: cert.height }}
                                 >
                                     <Image
-                                        src={`/selos/${cert.filename}`}
+                                        src={`/cofres/selos/${cert.filename}`}
                                         alt={`Certificação de Segurança ${cert.name}`}
                                         fill
                                         className="object-contain brightness-0 invert"

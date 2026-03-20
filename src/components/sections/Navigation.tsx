@@ -65,7 +65,7 @@ export default function Navigation() {
                     >
                         <div className="relative w-48 h-12 flex items-center">
                             <Image
-                                src="/logo_branco.png"
+                                src="/cofres/logo_branco.png"
                                 alt="Valstark Logo"
                                 fill
                                 className="object-contain"

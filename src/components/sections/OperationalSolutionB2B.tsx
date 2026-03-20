@@ -34,7 +34,7 @@ export default function OperationalSolutionB2B() {
             {/* Background Watermark Symbol */}
             <div className="absolute -bottom-32 -right-32 w-[600px] md:w-[800px] opacity-10 pointer-events-none z-0">
                 <Image
-                    src="/simbolo (1).png"
+                    src="/cofres/simbolo (1).png"
                     alt="Valstark Background Watermark"
                     width={800}
                     height={800}

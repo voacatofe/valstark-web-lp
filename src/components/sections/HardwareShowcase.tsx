@@ -44,7 +44,7 @@ export default function HardwareShowcase() {
 
                             <div className="relative z-10 w-full max-w-md aspect-[4/3]">
                                 <Image
-                                    src="/cofres/linha_compact/compact_pro.png"
+                                    src="/cofres/cofres/linha_compact/compact_pro.png"
                                     alt="Compact Pro"
                                     fill
                                     className="object-contain drop-shadow-[0_0_30px_rgba(0,0,0,0.8)] transition-transform duration-700 group-hover:-translate-y-2 group-hover:scale-[1.03]"
@@ -154,7 +154,7 @@ export default function HardwareShowcase() {
 
                             <div className="relative z-10 w-full max-w-md aspect-[4/3] md:scale-110">
                                 <Image
-                                    src="/cofres/mini_pro.png"
+                                    src="/cofres/cofres/mini_pro.png"
                                     alt="Mini Pro"
                                     fill
                                     className="object-contain drop-shadow-[0_0_30px_rgba(0,0,0,0.8)] transition-transform duration-700 group-hover:-translate-y-2 group-hover:scale-[1.03]"
@@ -174,7 +174,7 @@ export default function HardwareShowcase() {
 
                             <div className="relative z-10 w-full max-w-md aspect-[4/3] scale-110 md:scale-[1.3] mt-10 lg:mt-0">
                                 <Image
-                                    src="/cofres/cofre_plus.png"
+                                    src="/cofres/cofres/cofre_plus.png"
                                     alt="Valstark Plus"
                                     fill
                                     className="object-contain drop-shadow-[0_0_30px_rgba(0,0,0,0.8)] transition-transform duration-700 group-hover:-translate-y-2 group-hover:scale-[1.03]"
