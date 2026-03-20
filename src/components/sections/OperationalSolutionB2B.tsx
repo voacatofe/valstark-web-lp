@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { AlertOctagon, CheckCircle2 } from "lucide-react";
+import Image from "next/image";
 
 export default function OperationalSolutionB2B() {
     const solutions = [
@@ -28,7 +29,19 @@ export default function OperationalSolutionB2B() {
     return (
         <section className="py-32 bg-zinc-50 relative overflow-hidden" id="solucao">
             {/* Top Accent Line */}
-            <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-zinc-300 to-transparent"></div>
+            <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-zinc-300 to-transparent z-20"></div>
+
+            {/* Background Watermark Symbol */}
+            <div className="absolute -bottom-32 -right-32 w-[600px] md:w-[800px] opacity-10 pointer-events-none z-0">
+                <Image
+                    src="/simbolo (1).png"
+                    alt="Valstark Background Watermark"
+                    width={800}
+                    height={800}
+                    className="w-full h-auto object-contain select-none"
+                    priority
+                />
+            </div>
 
             <div className="container-design max-w-7xl mx-auto px-6 relative z-10">
                 
@@ -72,7 +85,7 @@ export default function OperationalSolutionB2B() {
                             {/* Pain Section */}
                             <div className="md:w-1/2 p-10 md:p-14 flex flex-col justify-center relative overflow-hidden bg-white">
                                 {/* Background Number Index (Watermark) */}
-                                <div className="absolute -left-4 -bottom-10 opacity-[0.04] font-display font-black text-[200px] md:text-[280px] text-zinc-900 pointer-events-none leading-none select-none z-0">
+                                <div className="absolute -left-4 -bottom-10 opacity-10 font-display font-black text-[200px] md:text-[280px] text-zinc-900 pointer-events-none leading-none select-none z-0">
                                     {item.index}
                                 </div>
 
