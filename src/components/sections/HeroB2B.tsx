@@ -6,26 +6,46 @@ import { ArrowRight } from "lucide-react";
 
 export default function HeroB2B() {
     return (
-        <section className="relative h-[90vh] w-full flex flex-col justify-center overflow-hidden bg-[#0a0a0a] pt-[10vh] pb-0">
+        <section className="relative h-[90vh] w-full flex flex-col justify-center overflow-hidden bg-[#000000] pt-[10vh] pb-0">
+            {/* Engineering Grid Background */}
+            <div 
+                className="absolute inset-0 z-0 opacity-20 pointer-events-none"
+                style={{
+                    backgroundImage: `linear-gradient(#1a1a1a 1px, transparent 1px), linear-gradient(90deg, #1a1a1a 1px, transparent 1px)`,
+                    backgroundSize: '40px 40px'
+                }}
+            />
+
             {/* Video Background */}
-            <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none before:content-[''] before:absolute before:inset-0 before:z-10 before:bg-gradient-to-r before:from-[#0a0a0a] before:from-10% before:via-[#0a0a0a]/80 before:via-60% before:to-transparent">
+            <div className="absolute inset-0 z-10 overflow-hidden pointer-events-none before:content-[''] before:absolute before:inset-0 before:z-10 before:bg-gradient-to-r before:from-[#000000] before:from-10% before:via-[#000000]/70 before:via-60% before:to-transparent">
                 <video
                     autoPlay
                     loop
                     muted
                     playsInline
-                    className="absolute inset-0 w-full h-full object-cover z-0"
+                    className="absolute inset-0 w-full h-full object-cover z-0 grayscale opacity-40"
                 >
                     <source src="/IMG_4214.mp4" type="video/mp4" />
                 </video>
 
                 {/* Subtle Abstract Highlights */}
-                <div className="absolute top-0 right-0 w-[80%] h-[80%] bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#F25C2A]/20 via-transparent to-transparent opacity-60 blur-3xl"></div>
-                <div className="absolute bottom-0 left-0 w-[60%] h-[60%] bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-[#1E1E1E]/50 via-transparent to-transparent opacity-80 blur-3xl"></div>
+                <div className="absolute top-0 right-0 w-[80%] h-[80%] bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#F25C2A]/10 via-transparent to-transparent opacity-40 blur-3xl"></div>
             </div>
 
             <div className="container-design relative z-20 mt-12 md:mt-0">
                 <div className="flex flex-col items-start justify-center">
+                    {/* Micro-label technical */}
+                    <motion.div
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.6 }}
+                        className="mb-6 flex items-center gap-3"
+                    >
+                        <span className="text-[10px] tracking-[0.3em] text-[#F25C2A] font-bold uppercase">VOL.01</span>
+                        <div className="h-[1px] w-12 bg-[#F25C2A]/30"></div>
+                        <span className="text-[10px] tracking-[0.3em] text-[#a3a3a3] uppercase">DNA VALSTARK</span>
+                    </motion.div>
+
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -35,18 +55,18 @@ export default function HeroB2B() {
                         <h1
                             className="font-display font-black tracking-tighter flex flex-col uppercase m-0 p-0 whitespace-nowrap"
                             style={{
-                                fontSize: "clamp(7rem, 18vw, 8rem)",
-                                lineHeight: "0.9"
+                                fontSize: "clamp(5rem, 15vw, 8rem)",
+                                lineHeight: "0.85"
                             }}
                         >
-                            <span className="text-[#d1d1d1]">GLOBAL.</span>
+                            <span className="text-[#FFFFFF]">GLOBAL.</span>
                             <span
                                 className="text-transparent"
-                                style={{ WebkitTextStroke: "2px #F25C2A" }}
+                                style={{ WebkitTextStroke: "1.5px #F25C2A" }}
                             >
                                 INVIOLÁVEL.
                             </span>
-                            <span className="text-[#d1d1d1]">ININTERRUPTO.</span>
+                            <span className="text-[#FFFFFF]">ININTERRUPTO.</span>
                         </h1>
                     </motion.div>
 
@@ -54,20 +74,27 @@ export default function HeroB2B() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-                        className="mt-12 md:mt-16 max-w-2xl"
+                        className="mt-10 md:mt-12 max-w-2xl relative"
                     >
-                        <p className="text-md md:text-lg text-[#a3a3a3] font-body leading-relaxed mb-8">
-                            A engenharia de precisão que as maiores redes de varejo e empresas de transporte de valores confiam. A Valstark transforma a complexidade técnica em fluidez operacional e vantagem competitiva.
+                        {/* HUD Brackets for text */}
+                        <div className="absolute -left-6 -top-2 w-2 h-2 border-l border-t border-[#F25C2A]/40"></div>
+                        <div className="absolute -right-6 -bottom-2 w-2 h-2 border-r border-b border-[#F25C2A]/40"></div>
+
+                        <p className="text-sm md:text-base text-[#9CA3AF] font-body leading-relaxed mb-10 border-l border-[#F25C2A] pl-6 py-1">
+                            Engenharia de tolerância zero para operações críticas. A Valstark projeta arquiteturas de segurança física com precisão micrométrica, transformando inviolabilidade mecânica em vantagem competitiva global.
                         </p>
 
                         <div className="flex flex-col sm:flex-row items-start gap-4 mt-4">
                             <Button
-                                variant="outline"
+                                variant="primary"
                                 size="lg"
-                                className="group relative bg-white/5 hover:bg-white/10 text-white border border-white/10 hover:border-white/30 backdrop-blur-md shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] hover:shadow-[0_8px_32px_0_rgba(255,255,255,0.1)] transition-all duration-500 ease-out w-full sm:w-auto text-sm md:text-base px-8 py-4 rounded-full overflow-hidden"
-                                rightIcon={<ArrowRight className="w-5 h-5 ml-2 transition-transform duration-300 group-hover:translate-x-1 group-hover:text-white/80" />}
+                                className="group relative rounded-none px-10 py-5 bg-[#F25C2A] hover:bg-[#ff6a3d] text-black border-none transition-all duration-300 overflow-hidden"
+                                rightIcon={<ArrowRight className="w-5 h-5 ml-2 transition-transform duration-300 group-hover:translate-x-1" />}
                             >
-                                <span className="relative z-10 font-medium tracking-wide group-hover:text-white/90 transition-colors duration-300">CONHEÇA O PADRÃO VALSTARK</span>
+                                <span className="relative z-10 font-bold tracking-widest uppercase text-xs">CONHEÇA O PADRÃO VALSTARK</span>
+                                
+                                {/* Industrial hover effect */}
+                                <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity"></div>
                             </Button>
                         </div>
                     </motion.div>

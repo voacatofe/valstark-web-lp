@@ -6,6 +6,7 @@ import GlobalCompliance from "@/components/sections/GlobalCompliance";
 import OperationalSolutionB2B from "@/components/sections/OperationalSolutionB2B";
 import PortfolioB2B from "@/components/sections/PortfolioB2B";
 import HardwareShowcase from "@/components/sections/HardwareShowcase";
+import NameOrigin from "@/components/sections/NameOrigin";
 import ConversionB2B from "@/components/sections/ConversionB2B";
 import Footer from "@/components/sections/Footer";
 
@@ -20,6 +21,7 @@ export default function Home() {
         <GlobalCompliance />
         <OperationalSolutionB2B />
         <HardwareShowcase />
+        <NameOrigin />
         <ConversionB2B />
       </main>
       <Footer />

@@ -43,48 +43,6 @@ export default function ConversionB2B() {
 
     return (
         <>
-            {/* Dobra 5: CTA Final Banner */}
-            <section className="bg-slate-800 py-20 border-b border-slate-700 relative overflow-hidden" id="demo">
-                <div className="absolute inset-0 bg-[url('/simbolo%20(2).png')] bg-no-repeat bg-right-bottom opacity-5 mix-blend-overlay"></div>
-                <div className="container-design relative z-10">
-                    <div className="max-w-4xl mx-auto text-center">
-                        <motion.h2
-                            className="text-3xl md:text-5xl font-black uppercase tracking-tight text-white mb-6 font-display"
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.5 }}
-                        >
-                            VALSTARK: ONDE O <span className="text-primary">VALOR</span> SE TORNA FORTE.
-                        </motion.h2>
-                        <motion.p
-                            className="text-lg md:text-xl text-slate-300 mb-10 font-sans leading-relaxed"
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.5, delay: 0.1 }}
-                        >
-                            "Val" de Valor e Credibilidade. "Stark" de Forte e Robustez Industrial. Nossa engenharia verticalizada (Metallurgy as a Service) está pronta para elevar o padrão da sua operação global.
-                        </motion.p>
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.5, delay: 0.2 }}
-                        >
-                            <Button
-                                variant="primary"
-                                size="lg"
-                                rightIcon={<ArrowRight className="w-5 h-5" />}
-                                onClick={scrollToForm}
-                                className="font-bold tracking-wide uppercase"
-                            >
-                                Agendar Demo Técnica Internacional
-                            </Button>
-                        </motion.div>
-                    </div>
-                </div>
-            </section>
 
             {/* Dobra 6: Formulário B2B */}
             <section className="py-24 bg-slate-50" id="formulario-conversao">
