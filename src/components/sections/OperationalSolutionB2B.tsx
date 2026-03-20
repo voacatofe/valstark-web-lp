@@ -70,9 +70,9 @@ export default function OperationalSolutionB2B() {
                             <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-zinc-100"></div>
 
                             {/* Pain Section */}
-                            <div className="md:w-1/2 p-10 md:p-14 flex flex-col justify-center relative">
-                                {/* Number Index */}
-                                <div className="absolute top-6 left-6 opacity-5 font-display font-black text-6xl text-zinc-900 pointer-events-none">
+                            <div className="md:w-1/2 p-10 md:p-14 flex flex-col justify-center relative overflow-hidden bg-white">
+                                {/* Background Number Index (Watermark) */}
+                                <div className="absolute -left-4 -bottom-10 opacity-[0.04] font-display font-black text-[200px] md:text-[280px] text-zinc-900 pointer-events-none leading-none select-none z-0">
                                     {item.index}
                                 </div>
 
