@@ -55,10 +55,10 @@ export default function HeroB2B() {
                         className="w-full"
                     >
                         <h1
-                            className="font-display font-black tracking-tighter flex flex-col uppercase m-0 p-0 whitespace-nowrap"
+                            className="font-display font-black tracking-tighter flex flex-col uppercase m-0 p-0"
                             style={{
-                                fontSize: "clamp(5rem, 15vw, 8rem)",
-                                lineHeight: "0.85"
+                                fontSize: "clamp(1.8rem, 11vw, 8rem)",
+                                lineHeight: "1.1"
                             }}
                         >
                             <span className="text-[#FFFFFF]">GLOBAL.</span>
