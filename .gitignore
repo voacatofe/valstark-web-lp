@@ -39,4 +39,4 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-public/IMG_4214.mp4 
+# public/IMG_4214.mp4 (comprimido para hero-bg.mp4)

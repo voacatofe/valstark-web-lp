@@ -27,7 +27,7 @@ export default function HeroB2B() {
                     playsInline
                     className="absolute inset-0 w-full h-full object-cover z-0 grayscale opacity-40"
                 >
-                    <source src="/cofres/IMG_4214.mp4" type="video/mp4" />
+                    <source src="/cofres/hero-bg.mp4" type="video/mp4" />
                 </video>
 
                 {/* Subtle Abstract Highlights */}
